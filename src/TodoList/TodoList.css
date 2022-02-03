@@ -1,0 +1,19 @@
+ul {
+    margin: 0;
+    padding: 10px 0 56px 0;
+    list-style: none;
+}
+
+.createTask, .loadingTask {
+    color: #fff;
+    text-align: center;
+}
+
+.createContainer, .loadingContainer {
+    display: grid;
+    justify-items: center;
+}
+
+.createImageTask, .loadingImageTask {
+    width: 90%;
+}
