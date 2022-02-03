@@ -28,13 +28,13 @@ function AppUI() {
         {error && <p>Desespérate, hubo un error...</p>}
         {loading && 
         <div className="loadingContainer">
-        <img classname="loadingImageTask" src="/loading.svg"/> 
+        <img classname="loadingImageTask" src="loading.svg"/> 
         <p className="loadingTask">Loading, take it easy...</p>
       </div>
         }
         {(!loading && !searchedTodos.length) && 
         <div className="createContainer">
-          <img className="createImageTask" src="/writting.svg"/> 
+          <img className="createImageTask" src="writting.svg"/> 
           <p className="createTask">Create your first task...</p>
         </div>
         }
