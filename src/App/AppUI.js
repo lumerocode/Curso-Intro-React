@@ -7,6 +7,8 @@ import { TodoItem } from '../TodoItem';
 import { TodoForm } from '../TodoForm';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
+import writting from '../App/writting.svg';
+import loadingRefresh from '../App/loading.svg';
 
 function AppUI() {
   const {
@@ -28,13 +30,13 @@ function AppUI() {
         {error && <p>Desespérate, hubo un error...</p>}
         {loading && 
         <div className="loadingContainer">
-        <img classname="loadingImageTask" src="loading.svg"/> 
+        <img className="loadingImageTask" src={loadingRefresh}/> 
         <p className="loadingTask">Loading, take it easy...</p>
       </div>
         }
         {(!loading && !searchedTodos.length) && 
         <div className="createContainer">
-          <img className="createImageTask" src="writting.svg"/> 
+          <img className="createImageTask" src={writting}/> 
           <p className="createTask">Create your first task...</p>
         </div>
         }
