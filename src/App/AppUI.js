@@ -30,9 +30,9 @@ function AppUI() {
         {error && <p>Desespérate, hubo un error...</p>}
         {loading && 
         <div className="loadingContainer">
-        <img className="loadingImageTask" src={loadingRefresh}/> 
-        <p className="loadingTask">Loading, take it easy...</p>
-      </div>
+          <img className="loadingImageTask" src={loadingRefresh}/> 
+          <p className="loadingTask">Loading, take it easy...</p>
+        </div>
         }
         {(!loading && !searchedTodos.length) && 
         <div className="createContainer">

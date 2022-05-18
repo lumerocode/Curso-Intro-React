@@ -11,12 +11,16 @@ function TodoSearch() {
   };
 
   return (
-    <input
-      className="TodoSearch"
-      placeholder="Search Task..."
-      value={searchValue}
-      onChange={onSearchValueChange}
-    />
+    <>
+    <div className='container__todoSearch'>
+        <input
+          className="TodoSearch"
+          placeholder="Search Task..."
+          value={searchValue}
+          onChange={onSearchValueChange}
+        />
+      </div>
+    </>
   );
 }
 

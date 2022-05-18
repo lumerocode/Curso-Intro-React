@@ -15,5 +15,19 @@ ul {
 }
 
 .createImageTask, .loadingImageTask {
-    width: 90%;
+    width: 25%;
+}
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@media screen and (max-width: 1024px) {
+    .createImageTask, .loadingImageTask {
+        width: 90%;
+    }
+}
+
+/* ===================== MEDIA QUERIES (SMALL DEVICES) ===================== */
+@media screen and (max-width: 600px) {
+    .createImageTask, .loadingImageTask {
+        width: 90%;
+    }
 }
