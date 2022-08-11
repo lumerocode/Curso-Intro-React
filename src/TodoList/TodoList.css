@@ -1,7 +1,13 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     margin: 0;
     padding: 10px 0 56px 0;
     list-style: none;
+    width: 40%;
 }
 
 .createTask, .loadingTask {
@@ -15,7 +21,7 @@ ul {
 }
 
 .createImageTask, .loadingImageTask {
-    width: 25%;
+    width: 75%;
 }
 
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
@@ -27,6 +33,10 @@ ul {
 
 /* ===================== MEDIA QUERIES (SMALL DEVICES) ===================== */
 @media screen and (max-width: 600px) {
+    ul {
+        width: 100%;
+    }
+
     .createImageTask, .loadingImageTask {
         width: 90%;
     }
